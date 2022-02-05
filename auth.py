@@ -5,7 +5,7 @@ import jwt
 from flask import request
 
 from config import Config
-from lesson19_project_easy_source.models import User
+from models import User
 
 
 def generate_token(data):

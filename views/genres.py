@@ -2,9 +2,9 @@ from flask import request
 from flask_restx import Resource, Namespace
 
 
-from lesson19_project_easy_source.auth import auth_required, admin_required
-from lesson19_project_easy_source.models import Genre, GenreSchema
-from lesson19_project_easy_source.setup_db import db
+from auth import auth_required, admin_required
+from models import Genre, GenreSchema
+from setup_db import db
 
 genre_ns = Namespace('genres')
 

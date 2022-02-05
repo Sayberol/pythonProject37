@@ -3,9 +3,9 @@ from flask_restx import Resource, Namespace
 
 
 
-from lesson19_project_easy_source.auth import auth_required, admin_required
-from lesson19_project_easy_source.models import Movie, MovieSchema
-from lesson19_project_easy_source.setup_db import db
+from auth import auth_required, admin_required
+from models import Movie, MovieSchema
+from setup_db import db
 
 movie_ns = Namespace('movies')
 

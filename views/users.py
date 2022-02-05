@@ -3,8 +3,8 @@
 from flask import request
 from flask_restx import Namespace, Resource
 
-from lesson19_project_easy_source.models import User, UserSchema
-from lesson19_project_easy_source.setup_db import db
+from models import User, UserSchema
+from setup_db import db
 
 user_ns = Namespace('users')
 

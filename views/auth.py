@@ -5,8 +5,8 @@ import jwt
 from flask import request
 from flask_restx import Namespace, Resource
 
-from lesson19_project_easy_source.auth import generate_token, check_token
-from lesson19_project_easy_source.models import User
+from auth import generate_token, check_token
+from models import User
 
 auth_ns = Namespace('auth')
 

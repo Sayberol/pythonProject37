@@ -2,8 +2,8 @@ from flask import Flask
 from flask_restx import Api
 
 from config import Config
-from lesson19_project_easy_source.models import User
-from lesson19_project_easy_source.views.users import user_ns
+from models import User
+from views.users import user_ns
 from setup_db import db
 from views.directors import director_ns
 from views.genres import genre_ns

@@ -3,9 +3,9 @@ from flask_restx import Resource, Namespace
 
 
 
-from lesson19_project_easy_source.auth import auth_required, admin_required
-from lesson19_project_easy_source.models import Director, DirectorSchema
-from lesson19_project_easy_source.setup_db import db
+from auth import auth_required, admin_required
+from models import Director, DirectorSchema
+from setup_db import db
 
 director_ns = Namespace('directors')
 
