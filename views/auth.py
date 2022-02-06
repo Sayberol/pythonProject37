@@ -20,7 +20,7 @@ class AuthView(Resource):
         json_user_name = req_json.get("username")
         user_pass = req_json.get("password")
         user = db.session.query(User).filter_by(username=json_user_name).first()
-        if not user and user.password == user_pass:
+        if user and user.password == user_pass:
             response = generate_token(req_json)
             return response, 200
         else:
